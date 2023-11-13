@@ -12,9 +12,9 @@ public class StudentWithTimerAndCalendar implements Learner {
         @Override
         public void learn() {
             Date current = new Date();
-            SimpleDateFormat formatter = new SimpleDateFormat("dd.MM.YYYY HH:mm");
-            String message = formatter.format(current);
-            System.out.printf("Дата-время начала учёбы: %s \n", message);
+			SimpleDateFormat formatter = new SimpleDateFormat("HH:mm");
+			String message = formatter.format(current);
+			System.out.printf("Время начала учёбы: %s \n", message);
             learner.learn();
         }
     }
